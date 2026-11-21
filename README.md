@@ -14,7 +14,7 @@ No frameworks, no build step: `index.html`, `style.css`, `script.js` and `/image
 | `style.css` | All styling (mobile-first, RTL-aware) |
 | `script.js` | **`SHOP` content object at the top** + page logic below it |
 | `poster.html` | Printable A5 poster with an inline QR code |
-| `images/` | Logo, illustrations, `og-image.png`, `apple-touch-icon.png` |
+| `images/` | Logo, illustrations, `og-image.jpg`, `apple-touch-icon.png` |
 | `screenshots/` | Preview screenshots for showing the owner (not linked from the site) |
 
 ## Reusing the site for another shop
@@ -28,7 +28,7 @@ No frameworks, no build step: `index.html`, `style.css`, `script.js` and `/image
    - JSON-LD structured data is built from `SHOP` automatically.
 2. **Edit the `<head>` of `index.html`**: the `<title>`, description, and the `og:` / `twitter:` tags.
    WhatsApp and other link previews don't run JavaScript, so these must be plain text.
-3. **Replace `images/og-image.png`** (1200×630) and `images/logo.svg` / `images/apple-touch-icon.png`.
+3. **Replace `images/og-image.jpg`** (1200×630) and `images/logo.svg` / `images/apple-touch-icon.png`.
 4. **Poster:** change the text in `poster.html`. The QR code is a static inline SVG; to point it somewhere
    else, regenerate it, for example with `npx qrcode -t svg -o qr.svg "https://your-url/"`, and paste the
    `<svg>` into the `.qr-box`.
